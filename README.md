@@ -1,12 +1,11 @@
-# melbourne-housing-sql-cleaning
-Limpieza, estandarización e imputación de datos inmobiliarios de Melbourne (~34k registros) usando MySQL
-# 🧹 Melbourne Housing Market — SQL Data Cleaning & Transformation
+
+# Melbourne Housing Market — SQL Data Cleaning & Transformation
 
 ![SQL](https://img.shields.io/badge/Language-SQL%20%2F%20MySQL-blue)
 ![Focus](https://img.shields.io/badge/Focus-Data%20Cleaning%20%26%20Wrangling-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## 📌 Resumen del Proyecto
+##  Resumen del Proyecto
 
 Este proyecto aborda el proceso completo de **limpieza, estandarización e imputación de datos** sobre un conjunto de datos real y de gran volumen (~34,000 registros) del mercado inmobiliario en Melbourne, Australia. 
 
@@ -14,7 +13,7 @@ El objetivo principal fue transformar un dataset crudo e inconsistente en una fu
 
 ---
 
-## 🛠️ Principales Habilidades y Técnicas Aplicadas
+## Principales Habilidades y Técnicas Aplicadas
 
 * **Arquitectura de Staging Tables:** Uso estricto de tablas temporales/copias para preservar los datos originales (`RAW`) y garantizar la trazabilidad de las transformaciones.
 * **Deduplicación Avanzada:** Aplicación de funciones de ventana (`ROW_NUMBER()` con partición en 21 atributos) para identificar e imputar registros duplicados.
@@ -25,7 +24,7 @@ El objetivo principal fue transformar un dataset crudo e inconsistente en una fu
 
 ---
 
-## 📊 Flujo de Trabajo de Limpieza (Paso a Paso)
+## Flujo de Trabajo de Limpieza (Paso a Paso)
 
 1. **Ingesta y Staging:** Carga masiva de datos mediante `LOAD DATA LOCAL INFILE` y creación de la tabla de trabajo `houses_staging`.
 2. **Deduplicación:** Asignación de índices únicos por grupo para eliminar filas duplicadas en `houses_staging2`.
@@ -35,8 +34,3 @@ El objetivo principal fue transformar un dataset crudo e inconsistente en una fu
 6. **Validación de Outliers:** Detección y tratamiento de anomalías en variables numéricas (ej. reemplazo de `YearBuilt = 1196` por `NULL`).
 
 ---
-
-## 🗂️ Estructura del Repositorio
-
-* `melbourne_cleaning.sql`: Script SQL con el código de limpieza y transformación paso a paso.
-* `README.md`: Documentación del proyecto.
