@@ -1,10 +1,6 @@
 
 # Melbourne Housing Market — SQL Data Cleaning & Transformation
 
-![SQL](https://img.shields.io/badge/Language-SQL%20%2F%20MySQL-blue)
-![Focus](https://img.shields.io/badge/Focus-Data%20Cleaning%20%26%20Wrangling-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
 ##  Resumen del Proyecto
 
 Este proyecto aborda el proceso completo de **limpieza, estandarización e imputación de datos** sobre un conjunto de datos real y de gran volumen (~34,000 registros) del mercado inmobiliario en Melbourne, Australia. 
